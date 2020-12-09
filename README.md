@@ -17,7 +17,7 @@ A static web page  uses .wav audio files and keypress events to turn the user's 
 
 ## Screenshots
 
-![drum kit screen shot](.public/images/screen-shot.png)
+![drum kit screen shot](https://github.com/KrystynaMil/Drum-Kit/blob/master/public/images/screen-shot.png)
 
 ## Technologies
 
