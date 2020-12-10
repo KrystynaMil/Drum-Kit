@@ -7,15 +7,11 @@
 <!-- BEGIN TOC -->
 
 - [handlers](#handlers)
-  - [artify.js](#srchandlersartifyjs)
-  - [change-separator.js](#srchandlerschange-separatorjs)
+  - [play-sound.js](#srchandlersplay-soundjs)
 - [listeners](#listeners)
-  - [change-separator.js](#srclistenerschange-separatorjs)
-  - [inputting.js](#srclistenersinputtingjs)
+  - [play-sound.js](#srclistenersplay-soundjs)
+  - [remove-transition.js](#srclistenersremove-transitionjs)
 - [logic](#logic)
-  - [reverse.js](#srclogicreversejs)
-- [data.js](#srcdatajs)
-- [init.js](#srcinitjs)
 
 <!-- END TOC -->
 
@@ -35,31 +31,17 @@ Handler function define user interactions. They will:
 
 ---
 
-### [./src/handlers/artify.js](./src/handlers/artify.js?study)
+### [./src/handlers/play-sound.js](./src/handlers/play-sound.js?study)
 
-<a name="artifyHandler"></a>
+<a name="playSound"></a>
 
-## artifyHandler
+## playSound(event)
 
-creates a mirror-image rendering of the user input and displays the growing artwork
+play a music when the user press the nine keys , which are connected to audio files
 
-| Param | Type               | Description                                                |
-| ----- | ------------------ | ---------------------------------------------------------- |
-| event | <code>Event</code> | triggered whenever a user releases a key in the input area |
-
----
-
-### [./src/handlers/change-separator.js](./src/handlers/change-separator.js?study)
-
-<a name="changeSeparatorHandler"></a>
-
-## changeSeparatorHandler
-
-changes the program's separator value
-
-| Param | Type               | Description                                                 |
-| ----- | ------------------ | ----------------------------------------------------------- |
-| event | <code>Event</code> | triggered whenever a user types in the separator input area |
+| Param | Type               | Description                                          |
+| ----- | ------------------ | ---------------------------------------------------- |
+| event | <code>Event</code> | triggered whenever a user press one of the nine keys |
 
 [TOP](#DOCS)
 
@@ -75,25 +57,25 @@ You can use the same handler in many different listeners, or add more than one l
 
 ---
 
-### [./src/listeners/change-separator.js](./src/listeners/change-separator.js?study)
-
-<a name="change separator
-calls handler that changes the mirror-arts separator"></a>
-
-## change separator
-
-calls handler that changes the mirror-arts separator
-
----
-
-### [./src/listeners/inputting.js](./src/listeners/inputting.js?study)
+### [./src/listeners/play-sound.js](./src/listeners/play-sound.js?study)
 
 <a name="user input
-calls the reverseHandler when a user types in the input field"></a>
+calls the reverseHandler when a user pressed at a short period"></a>
 
 ## user input
 
-calls the reverseHandler when a user types in the input field
+calls the reverseHandler when a user pressed at a short period
+
+---
+
+### [./src/listeners/remove-transition.js](./src/listeners/remove-transition.js?study)
+
+<a name="stop the transition 
+calls handler that stop the transition"></a>
+
+## stop the transition
+
+calls handler that stop the transition
 
 [TOP](#DOCS)
 
@@ -114,44 +96,8 @@ Logic functions will _never_ ...
 - use variables that are not parameters
 - use variables that are not declared locally
 
----
-
-### [./src/logic/reverse.js](./src/logic/reverse.js?study)
-
-<a name="reverseLogic"></a>
-
-## reverseLogic ⇒ <code>string</code>
-
-reverses a string
-
-**Returns**: <code>string</code> - the string reversed
-
-| Param | Type                | Description         |
-| ----- | ------------------- | ------------------- |
-| input | <code>string</code> | a string to reverse |
-
 [TOP](#DOCS)
 
 ---
-
----
-
-## [./src/data.js](./src/data.js?study)
-
-<a name="data"></a>
-
-## data
-
-data that is saved and used between user interactionss
-
-**Properties**
-
-| Name      | Type                | Description           |
-| --------- | ------------------- | --------------------- |
-| mirrorArt | <code>string</code> | the full user artwork |
-
----
-
-## [./src/init.js](./src/init.js?study)
 
 <!-- END DOCS -->
