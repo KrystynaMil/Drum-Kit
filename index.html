@@ -6,8 +6,7 @@
   <title>JS Drum Kit</title>
   <link rel="stylesheet" href="public/style.css">
 
-  <script src='./handlers/play-sound.js'></script>
-  <script src='./handlers/remove-transition.js'></script>
+ 
 </head>
 
 <body>
@@ -62,8 +61,10 @@
   <audio data-key="76" src="public/sounds/tink.wav"></audio>
 
 
-  <script src='./listeners/play-sound.js'></script>
-  <script src='./listeners/remove-transition.js'></script>
-</body>
+  <!-- initialize your application -->
+  <script type="module" src="src/init.js"></script>
 
+  <!-- load the review buttons for your live deployment  -->
+  <script src="./lib/review-buttons.js"></script>
+</body>
 </html>
